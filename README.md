@@ -1,70 +1,133 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Budget Tracker Application
 
-## Available Scripts
+**Author**: Bethney Machin  
+**University**: Sheffield Hallam University  
+**Course**: BSc Digital & Technology Solutions  
+**Module**: Software Engineering Concepts & Methods  
+**Module Code**: 55-507096-DF-20245  
+**Assessment**: Budget Tracker Application
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📋 Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is an original submission by **Bethney Machin**, created to meet the assessment brief for the **Software Engineering Concepts & Methods** module (55-507096-DF-20245) as part of the Level 5 BSc Digital & Technology Solutions course at Sheffield Hallam University.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Budget Tracker Application allows users to:
+- Track income and expenses
+- Set financial reminders
+- View overall balance
+- Set and monitor savings goals
 
-### `npm test`
+It is built using **React** for the frontend and **Node.js with SQLite** for the backend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React (Frontend)
+- Node.js (Backend)
+- Express (API Server)
+- SQLite (Database)
+- HTML/CSS/JavaScript
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🖥️ How to Run the Application Locally
 
-### `npm run eject`
+Follow the steps below to install, set up, and run both the backend and frontend parts of the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 📦 Step 1: Clone or Download the Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If not already done, clone or download the project folder:
+```
+budget-tracker-app/
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### 🔧 Step 2: Install Node.js & SQLite
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ensure you have the following installed:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/)
+- [SQLite3](https://www.sqlite.org/index.html)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🗄️ Step 3: Set Up the Backend
 
-### Analyzing the Bundle Size
+1. Ensure the database file `budget-tracker-app.sqlite` is present in the root of the project.
+2. Open your terminal or command prompt.
+3. Navigate to the project directory:
+   cd path/to/budget-tracker-app
+4. Start the backend server:
+   node server.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+>This starts the API server and connects to the SQLite database.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 💻 Step 4: Set Up and Run the Frontend (React)
 
-### Advanced Configuration
+#### Option A – Run in Development Mode
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. From the root of the project, install frontend dependencies:
+   npm install
+2. Start the development server:
+   npm start
+3. The app will automatically open in your browser at:
+   http://localhost:3000
 
-### Deployment
+> In development mode, changes to the frontend code will automatically reload the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+#### Option B – Run in Production Mode
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Build the production-ready version of the app:
+   npm run build
+2. Install a static server globally (if not already installed):
+   npm install -g serve
+3. Serve the production build:
+   serve -s build
+
+4. By default, the app will be available at:
+   http://localhost:5000
+
+> The `build/` folder contains all the optimized frontend files for production.
+
+---
+
+## 🗂️ Project Structure
+
+```
+budget-tracker-app/
+├── build/                     # Production build output
+├── public/                    # Static assets
+├── src/                       # React components and logic
+├── server.js                  # Node.js backend entry point
+├── budget-tracker-app.sqlite # SQLite database file
+├── package.json               # Project dependencies and scripts
+└── README.md                  # Project documentation
+```
+
+---
+
+## Submission Declaration
+
+- This application is my own original work.
+- It has been developed to meet the requirements of the **Software Engineering Concepts & Methods** module (55-507096-DF-20245) at Sheffield Hallam University.
+- It demonstrates full-stack development using modern frameworks and methodologies while meeting the assessment brief and user stories.
+
+---
+
+## 📧 Author
+
+**Bethney Machin**  
+BSc Digital & Technology Solutions  
+Sheffield Hallam University
